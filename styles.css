@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+    font-size: 10px;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Typography */
+
+/* NavBar */
+.logo {
+    width: clamp(5rem, 10vw, 7.7rem);
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    font-size: clamp(1rem, 3vw , 1.8rem);
+    font-family: 'Oswald';
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-btn {
+    background-color: #A59678;
+    padding: .25em 1em;
+    border-radius: 10rem;
+}
+
+/* End NavBar */
+
+/* Hero */
+.hero__paragraph {
+    font-size: 2.4rem;
+    color: white;
+}
+
+.hero__header {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(6rem, 10vw, 9rem);
+    color: white;
+    line-height: 1.25;
+}
+
+.brown_text {
+    color: #A59678;
+}
+
+.hero__btn {
+    font-size: 2.4rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: #A59678;
+    border: none;
+    border-radius: 10rem;
+    padding: 1rem 4rem;
+    text-transform: uppercase;
+}
+/* End Hero */
+
+/* First Section */
+.section1__header {
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    color: #A59678;
+}
+
+.section1__content p {
+    font-size: 1.8rem;
+    font-family: 'Montserrat';
+}
+/* End First section */
+
+/* Second Section */
+.section2__header {
+    font-size: 3.6rem;
+    font-family: 'Oswald',sans-serif;
+    font-weight: 700;
+    color: #A59678;
+    line-height: 1.25;
+}
+
+.section2__item p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.1rem;
+}
+
+.section2__img img {
+    max-width: 100%;
+}
+
+.aside__header {
+    font-size: 3rem;
+    font-family: 'Oswald',sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.aside__content p {
+    font-family: 'Montserrat';
+    font-size: 1.8rem;
+    color: white;
+}
+
+/* Footer */
+.footer__header {
+    font-family: 'Oswald';
+    font-size: 2.4rem;
+    color: white;
+}
+
+.about__header, .list__header {
+    font-size: clamp(1.8rem, 4vw, 2.1rem);
+    font-family: 'Oswald';
+    font-weight: 700;
+    color: #A59678;
+}
+
+.about p, .footer__links {
+    font-size: clamp(1rem, 3vw ,1.6rem);
+    font-family: 'Monserrat';
+    text-decoration: none;
+    color: #bebec0;
+}
+
+.footer__item {
+    list-style: none;
+}
+/* End Footer */
+/* End Typography */
+
+
+/* Backgrounds colors */
+.header {
+    background-color: #2E323F;
+}
+
+.hero {
+    background-color: #3B4050;
+}
+
+.section1 {
+    background-color: whitesmoke;
+}
+
+.aside__content {
+    background-color: #3B4050;
+}
+
+.footer {
+    background-color: #3B4050;
+}
+/* End Background Color */
+
+/* Setting container width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 85%;
+}
+
+/* Navigation */
+.logo {
+    margin: auto 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 2rem 0;
+}
+
+.nav__list {
+    display: flex;
+    padding: 0;
+}
+
+.nav__list + .nav__list {
+    margin-left: 2rem;
+}
+
+.nav-item + .nav-item {
+    margin-left: 1rem;
+}
+/* End Navigation */
+
+/* Hero Section */
+.hero__container {
+    padding: 5rem 0;
+}
+
+.hero__paragraph {
+    margin: 5rem 0;
+}
+/* End Hero */
+
+/* First Section */
+.section1 {
+    padding: 5rem 0;
+}
+
+.section1__content {
+    text-align: center;
+    padding: 0 5rem;
+}
+
+.section1__content + .section1__content {
+    margin-top: 5rem;
+}
+
+/* End Section */
+
+/* Section 2 */
+.section2 {
+    padding-top: 5rem;
+}
+
+.section2__item p {
+    margin: 4rem 0;
+}
+
+.aside__header {
+    margin-bottom: 1rem;
+}
+
+.aside__content {
+    text-align: center;
+    padding: 5rem 5rem;
+    margin-top: 5rem;
+}
+
+.aside__content + .aside__content {
+    margin: 5rem 0;
+}
+
+/* Footer Section */
+.footer{
+    padding: 5rem 0;
+}
+
+.footer__header {
+    display: block;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+/* Set footer content to display flex */
+.flex {
+    display: flex;
+}
+
+/* Evenly put available space between content*/
+.footer__content {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/* Max-width set so that it would not fill the container */
+.about {
+    max-width: 40%;
+}
+
+.footer__list {
+    list-style: none;
+    padding:0;
+}
+
+.list__container {
+    margin-left: 2rem;
+}
+
+.list__header, .about__header {
+    margin: 1rem 0;
+}
+
+.footer__item + .footer__item {
+    margin-top: 1rem;
+}
+
+/* Media queries */
+@media (min-width:700px) {
+
+    .section1 .container {
+        display: flex;
+    }
+
+    .section1__content {
+        padding: 0;
+    }
+
+    .section1__content + .section1__content {
+        margin: 0;
+        margin-left: 4rem;
+    }
+
+    /* Aside section */
+    .aside {
+        display: flex;
+    }
+
+    .aside__content {
+        margin-bottom:5rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .aside__content + .aside__content {
+        margin-left: 2rem;
+    }
+}
+
+@media (min-width:1000px) {
+
+    .section2__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section2__content{
+        margin-right: 2rem;
+        max-width: 60%;
+    }
+
+    .aside {
+        display: block;
+        max-width: 30%;
+    }
+
+    .aside__content {
+        margin: 0;
+        padding: 4rem;
+    }
+
+    .aside__content + .aside__content {
+        margin: 2rem 0;
+    }
+}
